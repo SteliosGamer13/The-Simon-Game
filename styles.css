@@ -3,10 +3,10 @@ body {
   background-color: #011F3F;
   margin: 0;
   padding: 0;
+  font-family: "Press Start 2P", cursive;
 }
 
 #level-title {
-  font-family: "Press Start 2P", cursive;
   font-size: 2rem;
   margin: 40px 0 10px;
   color: #FEF2BF;
@@ -14,22 +14,24 @@ body {
 
 #best-score {
   color: #f5f0d8;
-  font-family: "Press Start 2P", cursive;
   font-size: 1rem;
   margin-bottom: 30px;
 }
 
-/* Buttons container */
+/* Layout */
 .container {
-  display: block;
   width: 50%;
   margin: auto;
 }
 
-/* Game buttons */
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Buttons */
 .btn {
   margin: 20px;
-  display: inline-block;
   height: 200px;
   width: 200px;
   border: 10px solid black;
@@ -38,42 +40,29 @@ body {
 }
 
 /* Colors */
-.green {
-  background-color: green;
-}
+.green { background-color: green; }
+.red { background-color: red; }
+.yellow { background-color: yellow; }
+.blue { background-color: blue; }
 
-.red {
-  background-color: red;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
-.blue {
-  background-color: blue;
-}
-
-/* Button press effect */
+/* Effects */
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
 
-/* Game over effect */
 .game-over {
   background-color: red;
   opacity: 0.8;
 }
 
-/* Instructions section */
+/* Instructions */
 .instructions {
   margin: 50px auto 30px;
   width: 80%;
   max-width: 700px;
-  text-align: center;
   color: #f5f0d8;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
 }
 
@@ -85,7 +74,7 @@ body {
   margin: 8px 0;
 }
 
-/* 📱 Mobile responsiveness */
+/* 📱 Mobile */
 @media (max-width: 768px) {
   .btn {
     height: 120px;

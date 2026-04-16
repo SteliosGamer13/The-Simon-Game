@@ -1,57 +1,72 @@
 body {
   text-align: center;
   background-color: #011F3F;
+  margin: 0;
+  padding: 0;
 }
 
 #level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  5%;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  margin: 40px 0 10px;
   color: #FEF2BF;
 }
 
+#best-score {
+  color: #f5f0d8;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+/* Buttons container */
 .container {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
+/* Game buttons */
 .btn {
-  margin: 25px;
+  margin: 20px;
   display: inline-block;
   height: 200px;
   width: 200px;
   border: 10px solid black;
   border-radius: 20%;
+  cursor: pointer;
 }
 
-.game-over {
-  background-color: red;
-  opacity: 0.8;
+/* Colors */
+.green {
+  background-color: green;
 }
 
 .red {
   background-color: red;
 }
 
-.green {
-  background-color: green;
+.yellow {
+  background-color: yellow;
 }
 
 .blue {
   background-color: blue;
 }
 
-.yellow {
-  background-color: yellow;
-}
-
+/* Button press effect */
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
 
+/* Game over effect */
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+/* Instructions section */
 .instructions {
   margin: 50px auto 30px;
   width: 80%;
@@ -70,12 +85,23 @@ body {
   margin: 8px 0;
 }
 
-#best-score {
-  color: #f5f0d8;
-  font-family: "Press Start 2P", cursive;
-  font-size: 1rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  font-size: 2rem;
+/* 📱 Mobile responsiveness */
+@media (max-width: 768px) {
+  .btn {
+    height: 120px;
+    width: 120px;
+    margin: 10px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  #level-title {
+    font-size: 1.2rem;
+  }
+
+  #best-score {
+    font-size: 0.8rem;
+  }
 }

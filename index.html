@@ -1,54 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="el">
 <head>
-  <meta charset="utf-8">
-  <title>Simon</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Simon Game</title>
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <h1 id="level-title">Πάτα κλικ ή κάποιο κουμπί στο πληκτρολογιο να ξεκινήσεις</h1>
+
+  <h1 id="level-title">Κάνε κλικ ή πάτα πλήκτρο για να ξεκινήσεις</h1>
   <p id="best-score">Καλύτερο σκορ: 0</p>
+
   <div class="container">
-    <div lass="row">
-
-      <div type="button" id="green" class="btn green">
-
-      </div>
-
-      <div type="button" id="red" class="btn red">
-
-      </div>
+    <div class="row">
+      <div class="btn green" id="green"></div>
+      <div class="btn red" id="red"></div>
     </div>
 
     <div class="row">
-
-      <div type="button" id="yellow" class="btn yellow">
-
-      </div>
-      <div type="button" id="blue" class="btn blue">
-
-      </div>
-
+      <div class="btn yellow" id="yellow"></div>
+      <div class="btn blue" id="blue"></div>
     </div>
-
   </div>
 
+  <!-- Instructions -->
   <div class="instructions">
-  <h2>Πώς παίζεται</h2>
-  <p>1. Ξεκίνα το παιχνίδι κάνοντας κλικ, πάτημα στην οθόνη ή πατώντας οποιοδήποτε πλήκτρο.</p>
-  <p>2. Παρατήρησε ποιο χρώμα ανάβει.</p>
-  <p>3. Πάτησε τα ίδια κουμπιά με τη σωστή σειρά.</p>
-  <p>4. Σε κάθε επίπεδο προστίθεται ένα νέο χρώμα στη σειρά.</p>
-  <p>5. Αν πατήσεις λάθος χρώμα, το παιχνίδι τελειώνει.</p>
-  <p>6. Φτάσε στο Level 12 για να κερδίσεις!</p>
-</div>
-<script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
-<script src="game.js"></script>
+    <h2>Πώς παίζεται</h2>
+    <p>1. Ξεκίνα το παιχνίδι κάνοντας κλικ, πάτημα ή πατώντας οποιοδήποτε πλήκτρο.</p>
+    <p>2. Παρατήρησε ποιο χρώμα ανάβει.</p>
+    <p>3. Πάτησε τα ίδια κουμπιά με τη σωστή σειρά.</p>
+    <p>4. Σε κάθε επίπεδο προστίθεται ένα νέο χρώμα.</p>
+    <p>5. Αν κάνεις λάθος, το παιχνίδι τελειώνει.</p>
+    <p>6. Πόσο σκορ μπορείς να φτάσεις; 🔥</p>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="game.js"></script>
+
 </body>
-
 </html>
-

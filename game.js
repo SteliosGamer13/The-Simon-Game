@@ -13,11 +13,11 @@ $(document).on("keypress click touchstart", function(event) {
     }
 
     started = true;
-playStartSound();
+    playStartSound();
 
-setTimeout(function() {
-  nextSequence();
-}, 800); // adjust depending on your sound length
+    setTimeout(function() {
+      nextSequence();
+    }, 800);
   }
 });
 
@@ -50,7 +50,7 @@ function playSound(name) {
 }
 
 function playStartSound() {
-  var audio = new Audio("sounds/game-start.mp3");
+  var audio = new Audio("sounds/start.mp3");
   audio.play();
 }
 
@@ -89,7 +89,7 @@ function checkAnswer(currentLevel) {
       $("body").removeClass("game-over");
     }, 200);
 
-    $("#level-title").text("Έχασες! Κάνε κλικ έξω ή πάτα πλήκτρο για να ξαναπαίξεις");
+    $("#level-title").text("Έχασες! Κάνε κλικ έξω ή πάτα κάποιο πλήκτρο για να ξαναπαίξεις");
 
     startOver();
   }
